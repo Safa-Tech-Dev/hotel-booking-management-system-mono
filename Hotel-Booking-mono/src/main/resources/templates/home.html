@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+</head>
+<body>
+	<section>
+
+		<div id="carouselExampleCaptions" class="carousel slide"
+			data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleCaptions" data-slide-to="0"
+					class="active"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+				<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-interval="3000">
+					<img th:src="@{/images/sasha.jpg}" class="d-block w-100" alt="hotel1">
+					<div class="carousel-caption d-none d-md-block">
+
+						<h4>Welcome to Our Hotel</h4>
+					</div>
+				</div>
+				<div class="carousel-item" data-interval="3000">
+					<img th:src="@{/images/michie.jpg}" class="d-block w-100" alt="hotel2">
+					<div class="carousel-caption d-none d-md-block">
+						<h4>Bumper Discount 40% ...Hurry Up...</h4>
+
+					</div>
+				</div>
+				<div class="carousel-item" data-interval="3000">
+					<img th:src="@{/images/olexandr.jpg}" class="d-block w-100"
+						alt="hotel3">
+					<div class="carousel-caption d-none d-md-block">
+						<h4>Limited rooms are available</h4>
+
+					</div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleCaptions"
+				role="button" data-slide="prev"> <span
+				class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+				class="sr-only">Previous</span>
+			</a> <a class="carousel-control-next" href="#carouselExampleCaptions"
+				role="button" data-slide="next"> <span
+				class="carousel-control-next-icon" aria-hidden="true"></span> <span
+				class="sr-only">Next</span>
+			</a>
+		</div>
+		<div class="container">
+			<h3>Booking a hotel on HBMS</h3>
+			<p>Whether you’re travelling for business or pleasure, Cleartrip
+				makes it a simple and delightful experience to book hotels, flights
+				and activities all in just a few clicks. Our curated and verified
+				list of 3 lakh plus hotels across 28 thousand plus cities from
+				around the globe ensures our travellers have enough options to
+				choose from and complete their online hotel booking at ease. The
+				platform offers an array of filters and sorting options to simplify
+				your search for hotels online. The product shows all the details of
+				your preferred hotel, like description, highlights, photos,
+				amenities, room types and rates in one place. Additional features
+				like pay-at-hotel, express checkout and free cancellations make the
+				process of booking hotel effortless.</p>
+
+			<h3 class="mb-3">How to find hotels near me?</h3>
+			<ul class="lh">
+				<li>It is very simple to search for nearby hotels on HBMS.com</li>
+
+				<li>Click on the 'hotels' tab on the homepage</li>
+				<li>Type in the city, locality, landmark, or hotel name in the
+					search bar</li>
+				<li>Fill in the check-in and check-out dates</li>
+				<li>Choose the number of travellers and hit enter to land on
+					the search result page of ‘hotels near me’</li>
+				<li>You can further narrow down your search list by choosing
+					multiple filters like price, star rating, traveller rating,
+					amenities and even preferences like hill-view or couple friendly.</li>
+				<li>How to book hotels on HBMS.com?</li>
+				<li>Once you select your preferred hotel, the ‘rooms & rates’
+					block with neatly grouped inclusions and photos assure you can
+					compare, choose and complete your hotel booking by clicking on the
+					book now button.</li>
+
+				<li>The 'book now' button lands on the itinerary page that
+					allows you to review your booking, enter your details and make the
+					payment.</li>
+			</ul>
+		</div>
+	</section>
+
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+body{
+	background: #e2e2e2!important;
+}
+  nav{
+    border-bottom: 4px solid orange;
+  }
+  .carousel-inner > .carousel-item > img {
+    width:250px;
+    height:450px;
+  }
+  .brand{
+    font-family: 'Lobster', cursive;
+  }
+  h3{
+    font-family: 'Lobster', cursive;
+  }
+  h1{
+    font-family: 'Lobster', cursive;
+  }
+  
+  footer{
+    background-image: url(../images/footerbg.png);
+    clear: both;
+    height: 500px;
+    background-position: 50% 50%;
+    
+}
+.social-footer{
+    width: 33%;
+    float: left;
+    height: 40%;
+    
+}
+.social-footer:hover{
+    background-color: black;
+    opacity: .5;
+}
+.center{
+    width: 50px;
+    margin: auto;
+    padding-top: 60px;
+}
+.copyright{
+    color: #ffffff;
+    font-size: .9em;
+    text-align: center;
+    display: block;
+    padding-top: 15px;
+}
+li a:hover{
+  background-color: #111;
+}
+.container > h3{
+  margin-top: 100px;
+}
+.container > p{
+ line-height: 45px;
+}
+.lh > li{
+  line-height: 45px;
+}
+.lh{
+  margin-bottom: 50px;
+}
+.cards > img{
+  width:250px ;
+  height: 250px;
+  float: right;
+  margin-top: 50px;
+  margin-bottom: 200px;
+ 
+}
+#main-col > h1 {
+  text-shadow: 2px 2px;
+}
+aside#sidebar{
+  float: right;
+  width: 30%;
+  margin-top: 10px;
+}
+.dark{
+  padding: 15px;
+  background: #35424a;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+article#main-col{
+  float: left;
+  width: 65%;
+}
+.dark > h3{
+  text-shadow: 2px 2px;
+}
+.search{
+  width: 150px;
+  margin-left: 150px;
+  
+}
+.search > a{
+  text-decoration: none;
+}
+/* .forms{
+  margin: 100px 200px 100px 200px;
+} */
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+/* Avatar image */
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}

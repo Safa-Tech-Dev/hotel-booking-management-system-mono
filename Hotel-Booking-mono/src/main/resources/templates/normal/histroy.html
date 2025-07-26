@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace= "normal/base::layout(~{::section})">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title th:text="${title}">History page</title>
+</head>
+<body>
+<section>
+	<div class="container">
+		<div class="col-lg m-auto d-blcok">
+			<form th:action="@{/user/do_history}" method="post" >	
+			<div class="text-center mt-5">
+			    <span class="font-weight-bold mr-4">Enter Booking Id:</span><input type="text" name="bookingId" id="bookingId" size="45" th:value="${keyword}"
+			    placeholder="type bookingId" required />
+			    &nbsp;
+			    <input type="submit" value="Search" class="btn btn-success btn-sm"/>
+			  <!--  &nbsp;
+			    <input type="button" value="Clear" id="btnClear" class="btn btn-warning btn-sm" onclick="clearSearch()" />  -->
+			</div>
+			</form>
+			
+			<div class="card mt-3 shadow-lg p-3 mb-5 bg-white rounded">
+			<div class="card card-body">
+				<table class="table table-hover">
+					<thead class="thead-dark">
+						<tr>
+						    <th>Booking ID</th>
+						    <th>First Name</th>
+						     <th>Last Name</th>
+							<th>Hotel ID</th>
+							<th>No. Of Guest</th>
+							<th>Total Rooms</th>
+						    <th>Billing Amount</th>
+							<th>Date Of Birth</th>
+							
+							
+						
+						</tr>
+					</thead>
+					<tbody>
+						<tr th:each="items:${listhsitory}">
+							<td th:text="${items.bookingId}"></td>
+							<td th:text="${items.firstName}"></td>
+							<td th:text="${items.lastName}"></td>
+							<td th:text="${items.hotelId}"></td>
+							<td th:text="${items.noOfGuest}"></td>
+							<td th:text="${items.totalRooms}"></td>
+							<td th:text="${items.amount}"></td>
+							<td th:text="${items.DOB}"></td>
+							
+							
+						</tr>
+					</tbody>
+
+				</table>
+			</div>
+		</div>
+		 <div class="text-align-center">
+		 </div>
+		</div>
+	</div>
+</section>
+<script type="text/javascript">
+    function clearSearch() {
+        window.location = "[[@{/do_search}]]";
+    }
+</script>
+</body>
+</html>
