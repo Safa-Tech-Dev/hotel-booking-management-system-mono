@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Hotel Search Page</title>
+</head>
+<body>
+	<section>
+		<div class="container">
+			<br>
+			<div
+				class="col-lg-6 m-auto d-block shadow-lg p-3 mb-5 bg-white rounded">
+				<form class="bg-light p-4" action="#" onsubmit="return validation()">
+					<h3 class="text-center mb-5 font-weight-bold border-bottom p-3">Search
+						Hotels</h3>
+
+					<div class="form-group">
+						<label for="inputCity" class="font-weight-bold">City</label><span
+							class="text-danger font-weight-bold">*</span> <input type="text"
+							class="form-control" name="city" id="city"> <span
+							id="cityName" class="text-danger font-weight-bold formerror">
+						</span>
+					</div>
+					<div class="form-group">
+						<label for="inputcheckin" class="font-weight-bold">Check-in</label><span
+							class="text-danger font-weight-bold">*</span> <input type="date"
+							class="form-control" name="checkin" id="checkin"> <span
+							id="checkinDate" class="text-danger font-weight-bold formerror">
+						</span>
+					</div>
+					<div class="form-group">
+						<label for="inputcheckout" class="font-weight-bold">Check-out</label><span
+							class="text-danger font-weight-bold">*</span> <input type="date"
+							class="form-control" name="checkout" id="checkout"> <span
+							id="checkoutDate" class="text-danger font-weight-bold formerror">
+						</span>
+					</div>
+
+
+
+
+					<div class="form-group">
+						<label for="inputromms" class="font-weight-bold">No of
+							rooms</label><span class="text-danger font-weight-bold">*</span> <input
+							type="number" class="form-control" name="rooms" id="rooms">
+						<span id="noOfRooms"
+							class="text-danger font-weight-bold formerror"> </span>
+					</div>
+					<div class="form-group">
+						<label for="inputromms" class="font-weight-bold">No of
+							adults</label><span class="text-danger font-weight-bold">*</span> <input
+							type="number" class="form-control" name="adults" id="adults">
+						<span id="noOfAdults"
+							class="text-danger font-weight-bold formerror"> </span>
+					</div>
+					<div class="form-group">
+						<label for="inputromms" class="font-weight-bold">No of
+							child</label><span class="text-danger font-weight-bold">*</span> <input
+							type="number" class="form-control" name="child" id="child">
+						<span id="noOfchild"
+							class="text-danger font-weight-bold formerror"> </span>
+					</div>
+
+
+					<!-- <button type="submit" class="btn btn-primary mb-5">Search</button> -->
+					<input type="submit" value="Search" name="submit"
+						class="btn btn-info">
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
